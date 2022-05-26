@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<!-- <form>
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form> -->
+
+<body>
+
+
+  <div class="container">
+    <div class="title">Registration form</div>
+    <div class="content">
+      <form action="/register" method="post" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="userName" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" name="phoneNumber" required>
+          </div>
+          <div class="input-box">
+            <span class="details">fathers Name</span>
+            <input type="text" name="userFathersName" placeholder="Enter fathers name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll No</span>
+            <input type="text" placeholder="Enter your Roll No" name="userollNumber" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required name="password">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input name="Confirmpassword" type="password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <input type="radio" name="gender" value="Male" id="dot-1">
+          <input type="radio" name="gender" id="dot-2" value="Female">
+          <input type="radio" name="gender" value="Not Preferred to say" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+
+          <div class="upload">
+
+            <input type="file" id="upload-button" name="image">
+            <label for="upload-button">
+              <i class="fas fa-upload"></i> &nbsp; Choose A Photo
+            </label>
+          </div>
+
+          <input type="submit" value="Register">
+
+          <p id="thank-you-message">
+            Thank you for Registering.
+          </p>
+
+
+
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+
+  <!-- <p id="thank-you-message">
+    Thank you for contacting us. We will be in touch with you very soon.
+  </p>
+  <form action="forms/subscribe.php" method="post">
+    <input type="email" name="email" placeholder="Enter your Email">
+    <input type="submit" value="Subscribe">
+  </form> -->
+
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
